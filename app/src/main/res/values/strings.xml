@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">KDroid</string>
+    <string name="current_time_placeholder">Current Time</string>
+    <string name="update">Update</string>
 </resources>
