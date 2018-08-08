@@ -7,9 +7,21 @@ import android.support.v7.app.AppCompatActivity
 import android.view.View
 import android.widget.TextView
 import io.andrewgarner.kdroid.R
+import io.andrewgarner.kdroid.time.TimeActivity.Companion.newIntent
+
+private const val INTENT_DATA_2 = "data"
+
+fun Context.TimeActivityIntent(data: String): Intent {
+    val intent = Intent(this, TimeActivity::class.java)
+    intent.putExtra(INTENT_DATA_2, data)
+
+    return intent
+}
 
 /**
  * Activity that displays time.
+ *
+ * See [newIntent]
  * Created by andrewgarner on 8/7/18.
  */
 class TimeActivity : AppCompatActivity() {
